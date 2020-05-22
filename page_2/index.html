@@ -1,0 +1,175 @@
+<!--
+ API Documentation HTML Template  - 1.0.0
+ Copyright © 2016 Florian Nicolas
+ Licensed under the MIT license.
+ https://github.com/ticlekiwi/API-Documentation-HTML-Template
+ !-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page 2</title>
+    <meta name="description" content="">
+    <meta name="author" content="ticlekiwi">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/hightlightjs-dark.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500|Source+Code+Pro:300" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css" media="all">
+    <link rel="stylesheet" href="../assets/css/img.css" media="all">
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+<div class="left-menu">
+    <div class="content-logo">
+        <img alt="platform by Emily van den Heever from the Noun Project" title="platform by Emily van den Heever from the Noun Project" src="../assets/images/logo.png" height="32" />
+        <span>API Documentation</span>
+    </div>
+    <div class="content-menu">
+        <ul>
+            <li class="scroll-to-link active" data-target="get-started">
+                <a>Get Started</a>
+            </li>
+            <li class="scroll-to-link" data-target="get-characters">
+                <a>Login Admin</a>
+            </li>
+            <li class="scroll-to-link" data-target="errors">
+                <a>Errors</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content-page">
+    <div class="content-code"></div>
+    <div class="content">
+        <div class="overflow-hidden content-section" id="content-get-started">
+            <h1 id="get-started">Get started</h1>
+            <pre>
+    API Endpoint
+
+        http://app.pet.cn.net/index.php/Goods/goodsInfo
+                </pre>
+            <p>
+                This is for top part of photo
+            </p>
+            <img src="../picture/2.png" alt="picture" style="
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 200px;
+                            height: 400px">
+        </div>
+        <div class="overflow-hidden content-section" id="content-get-characters">
+            <h2 id="get-characters">Category</h2>
+            <pre><code class="bash">
+# Here is a curl example
+curl
+-X GET http://app.pet.cn.net/index.php/Goods/goodsInfo/{id}
+                </code></pre>
+            <p>
+                To get admin info you need to make a GET call to the following url :<br>
+                <code class="higlighted">http://app.pet.cn.net/index.php/Goods/goodsInfo/{id}</code>
+            </p>
+            <br>
+            <pre><code class="json">
+Result example :
+http://app.pet.cn.net/index.php/Goods/goodsInfo?id=117
+// 20200522102522
+// http://app.pet.cn.net/index.php/Goods/goodsInfo?id=117
+
+{
+  "status": 1,
+  "message": "操作成功",
+  "data": {
+    "goods": [
+      {
+        "id": "117",
+        "title": "古驰（GUCCI）绚丽栀子香型女性淡香水（限量版小黄瓶）50ml 馥郁花果香调",
+        "p_id": "0",
+        "store_id": "2",
+        "stock": "100",
+        "express_id": "1",
+        "weight": "100.000",
+        "description": "古驰（GUCCI）绚丽栀子香型女性淡香水（限量版小黄瓶）50ml 馥郁花果香调",
+        "price_market": "700.00",
+        "price_member": "688.00",
+        "comment_member": "0",
+        "sales_sum": "3",
+        "brand_id": "1",
+        "class_two": "869",
+        "shelves": "1",
+        "pic_url": [
+
+        ]
+      }
+    ],
+    "images": [
+      {
+        "pic_url": "/Uploads/goods/2019-08-22/5d5e3632f0996.jpg"
+      },
+      {
+        "pic_url": "/Uploads/goods/2019-08-22/5d5e363313efd.jpg"
+      }
+    ]
+  }
+}
+                </code></pre>
+            <h4>PATH PARAMETERS</h4>
+            <table>
+                <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>id</td>
+                    <td>integer</td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="overflow-hidden content-section" id="content-errors">
+            <h2 id="errors">Errors</h2>
+            <p>
+                Htee API uses the following error codes:
+            </p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Error Code</th>
+                    <th>Meaning</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>400</td>
+                    <td>
+                        If you did not put parameter , this will tell id is must be integer
+                    </td>
+                </tr>
+                <tr>
+                    <td>404</td>
+                    <td>
+                        if get {id} is not impossible , this will show  [];
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="content-code"></div>
+</div>
+<script src="../assets/js/libs/jquery.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
