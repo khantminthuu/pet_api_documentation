@@ -24,6 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1c4QrHoVlSf3MRoIa7jwA1zglMz" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -67,7 +68,10 @@
       <workItem from="1589959364248" duration="1954000" />
       <workItem from="1590032787373" duration="2245000" />
       <workItem from="1590112761493" duration="1206000" />
-      <workItem from="1590114706168" duration="3321000" />
+      <workItem from="1590114706168" duration="5116000" />
+      <workItem from="1590374605553" duration="13000" />
+      <workItem from="1590375502367" duration="343000" />
+      <workItem from="1590377370760" duration="609000" />
     </task>
     <servers />
   </component>
